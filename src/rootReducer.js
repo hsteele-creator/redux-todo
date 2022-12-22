@@ -1,4 +1,9 @@
-const INITIAL_STATE = []
+const INITIAL_STATE = [{todo: ""}]
+{
+    todos: [],
+    cart: [],
+    activeTodoId: null
+}
 
 const rootReducer = (state=INITIAL_STATE, action) => {
     switch(action.type) {
@@ -17,6 +22,11 @@ const rootReducer = (state=INITIAL_STATE, action) => {
                 } else {
                     return todo
                 }
+            })
+        case("UPDATE_ID"):
+            return ({
+                ...state,
+                activeTodoId : action.payload.index
             })
         default:
             return state
