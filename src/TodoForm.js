@@ -15,6 +15,7 @@ const TodoForm = () => {
 
     return (
         <div id="Todo-Container">
+        <h1>Todo List</h1>
         <input type="text" ref={todoRef}></input>
         <button onClick={addTodo} type="submit">Add Todo</button>
         </div>

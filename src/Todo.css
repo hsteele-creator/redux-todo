@@ -25,3 +25,11 @@
 #remove {
     width: 20%;
 }
+
+.finished {
+    text-decoration: line-through;
+}
+
+p:hover {
+    cursor: pointer;
+}
