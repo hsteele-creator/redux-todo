@@ -1,6 +1,7 @@
 import React from "react"
 import {useRef} from "react"
 import { useDispatch  } from "react-redux"
+import "./TodoForm.css"
 
 const TodoForm = () => {
 
@@ -13,10 +14,10 @@ const TodoForm = () => {
     }
 
     return (
-        <>
+        <div id="Todo-Container">
         <input type="text" ref={todoRef}></input>
         <button onClick={addTodo} type="submit">Add Todo</button>
-        </>
+        </div>
     )
 }
 

@@ -5,7 +5,9 @@ const rootReducer = (state=INITIAL_STATE, action) => {
         case("ADD_TODO"):
             return [...state, {todo : action.payload.todo}]
         case("REMOVE_TODO"):
-            return state.filter((todo, i) => i != action.payload.index)
+            return state.filter((todo, i) => i != action.payload.index);
+        case("FINISHED_TODO") :
+            return state.map((todo, i) => action.payload.index === i ? todo.finished = true : todo)
         default:
             return state
     }
