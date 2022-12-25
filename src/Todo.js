@@ -5,7 +5,7 @@ import "./Todo.css"
 const Todo = ({index}) => {
 
     const todo = useSelector(store => store[index].todo);
-    const index = getTodo(index)
+    // const index = getTodo(index)
     const finished = useSelector(store => store[index].finished);
 
     const dispatch = useDispatch()

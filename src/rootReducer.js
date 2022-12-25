@@ -1,9 +1,9 @@
 const INITIAL_STATE = [{todo: ""}]
-{
-    todos: [],
-    cart: [],
-    activeTodoId: null
-}
+// {
+//     todos: [],
+//     cart: [],
+//     activeTodoId: null
+// }
 
 const rootReducer = (state=INITIAL_STATE, action) => {
     switch(action.type) {

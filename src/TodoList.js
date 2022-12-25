@@ -10,7 +10,10 @@ const TodoList = () => {
      <TodoForm />
     <ul>
         {todos.map((todo, i) => {
-            return <Todo index={i}/>
+            if(todo.todo != "") {
+                return <Todo index={i}/>
+            }
+            
         })}
     </ul>
     </>)
