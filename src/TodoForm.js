@@ -16,8 +16,10 @@ const TodoForm = () => {
     return (
         <div id="Todo-Container">
         <h1>Todo List</h1>
+        <div id="todo-flex">
         <input type="text" ref={todoRef} id="todo-input"></input>
-        <a onClick={addTodo} type="submit" id="submit">➕</a>
+        <button onClick={addTodo} type="submit" id="submit">add</button>
+        </div>
         </div>
     )
 }
