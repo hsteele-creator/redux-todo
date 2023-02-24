@@ -24,8 +24,21 @@
     width: 60%;
 }
 
+#buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+#trashcan {
+    width: 20px;
+}
+
 #remove {
     width: 20%;
+    margin: 0 10px;
+    padding: 0;
+    background-color: none;
+    border: none;
 }
 
 .finished {

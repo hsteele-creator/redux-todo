@@ -1,6 +1,7 @@
 import React from "react"
 import { useSelector, useDispatch } from "react-redux"
 import "./Todo.css"
+import Trashcan from "./trash-can.png"
 
 const Todo = ({index}) => {
 
@@ -25,8 +26,12 @@ const Todo = ({index}) => {
     return (
     <div id="todo">
     <li id="todo-item" className={finished === true ? "finished" : ""} onClick={updateActiveId}>{todo}</li>
-    <p id="remove" onClick={removeTodo}>🗑️</p>
-    <p id="finished" onClick={finishedTodo}>✔️</p>
+    <div id="buttons">
+    <button id="remove" onClick={removeTodo}>
+        <img id="trashcan" src={Trashcan} />
+    </button>
+    <input type="checkbox" id="finished" onClick={finishedTodo}></input>
+    </div>
     </div>
     )
 }
