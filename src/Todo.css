@@ -4,17 +4,17 @@
 }
 
 #todo {
-    width: 300px;
+    width: 310px;
     margin: 0 auto 10px auto;
     box-sizing: border-box;
     text-align: center;
-    padding: 20px 0;
+    padding: 20px;
     display: flex;
     justify-content: space-around;
     font-size: 16px;
     overflow-wrap: break-word;
-    border-radius: 6px;
-    background-color: white;
+    border-radius: 10px;
+    background-color: lightskyblue;
     border: 1px solid #7eaed3;
 }
 
@@ -34,15 +34,32 @@
 }
 
 #remove {
-    width: 20%;
+    /* width: 20%; */
     margin: 0 10px;
     padding: 0;
-    background-color: none;
+    background-color: lightskyblue;
     border: none;
+}
+
+#remove:hover {
+    cursor: pointer;
 }
 
 .finished {
     text-decoration: line-through;
+    color: lightgrey;
+}
+
+#finished {
+    width: 1.3em;
+    height: 1.3em;
+    margin-top: 2px;
+    outline: none;
+    border: none;
+}
+
+#finished:after {
+    background-color: grey;
 }
 
 p:hover {
