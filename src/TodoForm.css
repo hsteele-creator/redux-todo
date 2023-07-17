@@ -13,7 +13,7 @@
     border-radius: 6px;
     padding:  2px 12px;
     margin-top: 20px;
-    width: 65%;
+    width: 68%;
     border: none;
 }
 
@@ -24,12 +24,12 @@
 
 #submit {
     width: 20%;
-    height: 25px;
+    height: 30px;
     margin-top: 20px;
     background-color: #001440;
     color: white;
     border: none;
-    border-radius: 6px;
+    border-radius: 4px;
 }
 
 #submit:hover {
